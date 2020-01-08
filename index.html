@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!--
+
+Author: Fredrick Hermann
+Date: 12/9/19
+Modification history:
+    -11/12/19: original creation
+    -11/20/19: final structure
+    -11/22/19 choose final picture to use
+    -12/8/19: deployed on server
+
+Tested: Edge and Chrome
+Result: Larger font in Microsoft Edge
+
+-->
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Fredrick Hermann</title>
+        <link rel="stylesheet" href="css/header.css"> <!-- Seperate header andfooter style sheets prevents repeating code -->
+        <link rel="stylesheet" href="css/footer.css"> <!-- Seperate header andfooter style sheets prevents repeating code -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> <!-- Example of typography -->
+        <style>
+
+            /* Requirement #5: Embedded stylesheet.... */
+
+            body{
+
+                font-size: medium;
+
+            }
+
+            #subHeader{
+
+                padding-top: 5%;
+                width: 800px;
+                margin: auto;
+
+            }
+
+            #headshot{
+
+                display: block;
+                height: 500px;
+                width: 500px;
+                margin: auto;
+                margin-top: 25px;
+                border-radius: 1%;
+
+            }
+
+
+            #welcomeText{
+
+                border: 1px solid #404040;
+                text-align: center;
+                width: 500px;
+                margin: auto;
+                font-size: 200%;
+                padding: 15px;
+                font-family: 'Open Sans', sans-serif;
+                color: #404040;
+                margin-top: 5%;
+                border-radius: 1%;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <header id = "header"> <!-- Header element that contains the header menu bar -->
+                <a href = "about/about.html" class = "headerText">About</a> <!-- Links to all of the pages on my site and external sites. -->
+                <a href = "projects/projects.html" class = "headerText">Projects</a>
+                <a href = "https://www.linkedin.com/in/fredrick-hermann/" target="_blank" class = "headerText">LinkedIn</a>
+                <a href = "resume/Hermann_August_2019_CS.pdf" target="_blank" class = "headerText">Resume</a>
+                <a href = "contact/contact.html" class = "headerText">Contact</a>
+        </header>
+
+        <div id = "subHeader">
+            <img src="images/headshot.jpg" id = "headshot" alt = "Picture of my wife and I" height="500" width="500"><!-- Requirement for a jpg image! The image is the major attraction to this page. I tried to keep things simple here. -->
+            <blockquote cite = "https://www.quoteauthors.com/welcome-quotes/" id = "welcomeText">A smile is the universal welcome. - Max Eastman</blockquote> <!-- Requirement for a blockquote! I chose this quote to try to be relatable to the audience. -->
+        </div>
+
+        <footer> <!-- The footer contains a link that returns the user to the welcome (index.html) page. It also states the page was created by me for CS241 -->
+            <a class = "footerText" id = "home" href = "index.html">Home</a>
+            <p class = "footerText" id = "footerNote">Page created by Fredrick Hermann for CS241 @ IUPUI.</p>
+        </footer>
+
+    </body>
+
+
+
+</html>

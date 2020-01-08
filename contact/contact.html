@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Fredrick Hermann</title>
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/contact.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id = "header">
+                <a href = "../about/about.html" class = "headerText">About</a>
+                <a href = "../projects/projects.html" class = "headerText">Projects</a>
+                <a href = "https://www.linkedin.com/in/fredrick-hermann/" target="_blank" class = "headerText">LinkedIn</a>
+                <a href = "../resume/Hermann_August_2019_CS.pdf" target="_blank" class = "headerText">Resume</a>
+                <a href = "contact.html" class = "headerText">Contact</a>
+        </header>
+        <div id = "bodyContent">
+
+            <h1>Contact Me</h1>
+            <form action="mailto:email@email.com" method="post" enctype="text/plain">
+                <fieldset id = "contactInfo">
+                    <legend>Fill in your information below.</legend>
+                    <div class = "row"><label for="name">Name:</label><input id ="name" type="text" name="name" value="name" ></div>
+                    <div class = "row"><label for="email">E-mail:</label><input id = "email" type="text" name="email" value="email" ></div>
+                    <div class = "row"><label for="subject">Subject:</label><input id = "subject" type="text" name="subject" value="subject"></div>
+                    <div class = "row"><label for="message">Message:</label><textarea id = "message" name="message" rows="4" cols="32"></textarea></div>
+                    <input type="submit" class = "row">
+                    <input type="reset" class = "entry">
+                </fieldset>
+            </form>
+
+        </div>
+        <footer>
+            <a class = "footerText" id = "home" href = "../index.html">Home</a>
+            <p class = "footerText" id = "footerNote">Page created by Fredrick Hermann.</p>
+        </footer>
+    </body>
+</html>

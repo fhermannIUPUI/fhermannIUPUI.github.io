@@ -1,0 +1,40 @@
+body, p, h1, h2{
+
+    margin: 0; /* I like to start by making padding and amrgin 0 and setting the font size */
+    padding: 0;
+    font-size: medium;
+
+}
+
+#bodyContent{
+
+    /* Since the header and footer are in the body I create my own body div that I style as a jello layout with top and bottom margin to prevent header/footer from covering any portion of it. */
+
+    width: 600px;
+    margin: 55px auto; /* SYLE THAT OVERRIDES ANOTHER !!!!!!!!!!! Overrides the body margin and padding. */
+    color: #404040;
+    font-family: 'Open Sans', sans-serif; /* example of typography */
+
+}
+
+.bodyHeaders{
+
+    font-size: 150%; /* I make the font larger since I cannot use h1 - h6 elements */
+    padding-bottom: 1.5px; /* The padding adds more space between the text and border */
+    padding-right: 3.5px;
+    margin-left: 5px; /* I push it in from the edge of the page */
+
+    border-bottom: 1px solid #404040; /* The border ends up being a curved two sided border*/
+    border-right: 1px solid #404040;  /* see above */
+    border-bottom-right-radius: 5px;  /* see above */
+
+    display: inline-block; /* I've found I need this to prevent the border from taking up more space than the element (border extends way past the text)*/
+    background-color: white;
+
+}
+
+.details{
+
+    margin: 15px 0px 15px 15px; /* just to make spacing more appealing */
+
+}

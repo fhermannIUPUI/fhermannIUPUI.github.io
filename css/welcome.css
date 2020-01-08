@@ -1,0 +1,23 @@
+#subHeader{
+
+    padding-top: 5%;
+    text-align: center;
+
+}
+
+#headshot{
+
+    margin-top: 25px;
+    height: 500px;
+    width: 500px;
+
+}
+
+#welcomeText{
+
+    margin: auto;
+    font-size: 1000%;
+    font-family: 'Open Sans', sans-serif;
+    color: #404040;
+
+}

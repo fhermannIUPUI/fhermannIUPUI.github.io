@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!--
+
+Author: Fredrick Hermann
+Date: 12/9/19
+Modification history:
+    -11/12/19: original creation
+    -11/22/19: final structure
+    -12/8/19: initially deployed on server
+    -12/10/19: final tweaking to style and content
+
+Tested: Edge and Chrome
+Result: Larger font in Microsoft Edge
+
+-->
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Fredrick Hermann's Projects</title>
+        <link rel="stylesheet" href="../css/header.css"> <!-- Seperate header andfooter style sheets prevents repeating code -->
+        <link rel="stylesheet" href="../css/footer.css"> <!-- Seperate header andfooter style sheets prevents repeating code -->
+        <link rel="stylesheet" href="../css/projects.css"> <!-- Main external stylesheet -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> <!-- Example of typography -->
+    </head>
+    <body>
+        <header id = "header"> <!-- Header element that contains the header menu bar -->
+                <a href = "../about/about.html" class = "headerText">About</a> <!-- Links to all of the pages on my site and external sites. -->
+                <a href = "projects.html" class = "headerText">Projects</a>
+                <a href = "https://www.linkedin.com/in/fredrick-hermann/" target="_blank" class = "headerText">LinkedIn</a>
+                <a href = "../resume/Hermann_August_2019_CS.pdf" target="_blank" class = "headerText">Resume</a>
+                <a href = "../contact/contact.html" class = "headerText">Contact</a>
+        </header>
+
+        <div id="bodyContent">
+          <h1 class = "bodyHeaders">Programming Side Projects</h1>
+            <div class="python">
+                <img src="../images/python.png" alt="python logo" class = "images"><!-- REQUIREMENT FOR IMAGES! I wanted to use the python logo to break up the visual similarities between pages and python encourages this kind of use! -->
+                    <ul class = "details"><!-- REQUIREMENT FOR UL-->
+                        <li>Dose Response Analysis Tool</li><!-- I chose to use an unordered list so the project would be bulleted, but the description would hang under it. -->
+                        <li class = "description">This project simplified the data graphing process for dose response curves in a pre-clinical testing lab.
+                        Before I wrote this the lab had to manually calculate and graph data from an excel file that contained over 3000 lines per experiment!</li>
+                        <li>Surgical Scheduling Tool</li>
+                        <li class = "description">This project was also a simple workplace automation tool. I used regular expressions to match the name of surgical types
+                        so that we could filter out surgeries that would not qualify for our study. Before this, somebody had to manually dig through an excel file.</li>
+                    </ul>
+            </div>
+
+            <div class="c++">
+                <img src="../images/c++.png" alt="Generic C++ Logo" class = "images"><!-- REQUIREMENT FOR IMAGES! I had to create a "logo" for C++ since I couldn't find one that had a liberal license agreement -->
+                <ul class = "details">
+                    <li>Baseball Prediction and Simulation Engine</li> <!-- I chose to use an unordered list so the project would be bulleted, but the description would hang under it. -->
+                    <li class = "description">This project uses real world data to create a probabilistic model that can predict the performance of MLB players. This project is still in development, but is close to being ready to utilize for the upcoming 2020 season.
+                    Given data, the model can predict how well players will do based upon their previous stats and data.</li>
+                    <li>College Football Simulation Game</li>
+                    <li class = "description">This project was started November 2019, with a plan to release on steam at some point in late 2020. The game puts you in the position of coach. You decide who to recruit and how to gameplan to take your team to the very top of the league!
+                    This is a passion project that Fredrick has wanted to do since the early days of his computer programming obsession. Fredrick loves sports management sims and has always wanted to play a good college football one!</li>
+                </ul>
+            </div>
+
+          <h1 class = "bodyHeaders">Undergraduate Research Project Timelines</h1><!-- I had to alter this section to comply with the need for an ordered list. I felt like this was the only place on the entire site it made any sense. -->
+            <div id = "underGrad">
+                <h3 class = "projectTitles">Light Pollution</h3>
+                    <ol><!-- I give a loose timeline of how my research went. --> <!-- REQUIREMENT FOR OL-->
+                        <li class = "details">Fredrick started with this project in 2014 as an assistant.</li>
+                        <li class = "details">Shortly after starting he was put in charge of creating a new way to test whether light exposure impacted bird vigilance.</li>
+                        <li class = "details">This project was published during Fredrick's college years!</li>
+                    </ol>
+                <h3 class = "projectTitles">Noise Pollution</h3>
+                    <ol><!-- I give another loos timeline of how the reasearch went, it ended up not looking too out of place! -->
+                        <li class = "details">Fredrick helped the professor start this project up.</li>
+                        <li class = "details">Next Fredrick began recruiting and training other undergraduate students to assist with this project!</li>
+                        <li class = "details">Fredrick helped run the trials and created a </li>
+                        <li class = "details">During the late part of 2016, this project was published with Fredrick as a co-author!</li>
+                    </ol>
+            </div>
+        </div>
+
+        <footer> <!-- The footer contains a link that returns the user to the welcome (index.html) page. It also states the page was created by me for CS241 -->
+            <a class = "footerText" id = "home" href = "../index.html">Home</a>
+            <p class = "footerText" id = "footerNote">Page created by Fredrick Hermann for CS241 @ IUPUI.</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+footer{
+
+    position: fixed; /* fixed position at the bottom of the screen*/
+    bottom: 0px;
+
+    width: 100%; /* always takes up the full width of the screen */
+
+    font-size: medium;
+    background-color: #DDDDDD; /* the bakground color stays with the theme the header sets */
+
+}
+
+.footerText{
+
+    display: inline-block; /* make everythin take up on the space it needs */
+    padding: 10px 5px 5px 5px; /* set spacing for text taht is inside the footer */
+    font-family: 'Open Sans', sans-serif; /* example of typography */
+    text-decoration: none; /* I want clean, normal text with no underlines on links */
+    color: #404040;
+
+}
+
+#home:hover{
+
+    color: green; /* css rollover effects */
+    transition: color 0.25s ease;
+
+}
+
+#home:active{
+
+    color: blue; /* gives the link a color when clicked */
+
+}
+
+#footerNote{
+
+    position: absolute; /* I just want this to always be small and in the bottom */
+    right: 0;
+    font-size: 75%;
+
+}

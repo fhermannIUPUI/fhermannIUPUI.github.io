@@ -1,0 +1,45 @@
+html, body, p{
+
+    margin: 0;
+    padding: 0;
+    font-size: medium; /* reset all spacing and set font size to medium */
+
+}
+
+#header{ /* The header bar needs to always remain at the top of the screen. */
+
+    padding-top: 5px; /* add some spacing */
+    padding-bottom: 10px;
+    top: 0; /* this should always be at the top of the screen */
+    position: fixed;
+
+    width: 100%; /* the header should take up the entire width of the screen */
+
+    text-align: center; /* I want the links to be centered */
+    background-color: #DDDDDD;
+
+}
+
+.headerText{
+
+    display: inline-block; /* display on the same line in header */
+    padding-top: 5px;
+    margin: 0px 1.5%;
+    color: #404040;
+    font-family: 'Open Sans', sans-serif; /* example of typography */
+    text-decoration: none; /* prevent links from having underlines */
+
+}
+
+.headerText:hover{ /* REQUIREMENT FOR CSS ROLLOVER EFFECT */
+
+    color: green; /* css rollover effect */
+    transition: color 0.25s ease;
+
+}
+
+.headerText:active{
+
+    color: blue; /* css rollover effect */
+
+}
